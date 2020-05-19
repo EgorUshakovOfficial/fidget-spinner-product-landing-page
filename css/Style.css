@@ -1,0 +1,167 @@
+﻿.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/*Header*/
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: silver;
+}
+
+#nav-bar > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#logo {
+    align-self: flex-start;
+    width: 10vh;
+}
+
+#header-img {
+    width: 100%;
+    margin-top: 2px;
+}
+
+/*Form section*/
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10vh;
+}
+
+#email-label {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+#email {
+    border-radius: 5px;
+    height: 3vh;
+    width: 75%;
+    margin: 10px;
+}
+
+
+#submit {
+    width: 35%;
+    height: 5vh;
+    border-radius: 5px;
+    background: yellow;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+    #submit:hover {
+        background: rgb(250, 194, 65);
+    }
+
+
+/*Pricing Section*/
+#pricing-section {
+    margin: 100px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-height: 600px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        border: 1px solid black;
+        width: 100%;
+        line-height: 100px;
+        border-radius: 5px;
+    }
+}
+
+
+.fidget-img {
+    width: 50%;
+    height: auto;
+}
+
+.level {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 45%;
+    height: 5vh;
+    font-size: 20px;
+    background: yellow;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+}
+
+    .btn:hover {
+        background: rgb(250, 194, 65);
+    }
+
+/*Footer*/
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+    footer > ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+
+        footer > ul > li {
+            padding: 0 10px;
+        }
+
+            footer > ul > li > a {
+                text-decoration: none;
+                color: black;
+            }
+
+    footer > span {
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-end;
+        color: #444
+    }
